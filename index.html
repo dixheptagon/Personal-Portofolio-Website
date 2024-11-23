@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dixheptagon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/7766ba9250.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="assets/dharmachakra-solid.svg" type="image/svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="my-2 header">
+      <header
+        id="header"
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <i class="fa-solid fa-dharmachakra mx-2"></i>
+          <span class="fs-4 my-2 logo-header">Dixheptagon.</span>
+        </a>
+
+        <img class="goku-gif" src="assets/goku vs kisaru.gif" alt="goku gif" />
+
+        <div class="navigation">
+          <ul class="nav nav-pills" id="side-menu">
+            <div id="nav-container" class="nav nav-pills">
+              <li class="nav-item">
+                <a
+                  href="#home"
+                  class="nav-link active"
+                  aria-current="page"
+                  onclick="setActive(this)"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about-me" class="nav-link" onclick="setActive(this)"
+                  >ABOUT ME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link" onclick="setActive(this)"
+                  >PROJECTS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#contact-me" class="nav-link" onclick="setActive(this)"
+                  >CONTACT ME
+                </a>
+              </li>
+            </div>
+            <i
+              class="fa-solid fa-xmark"
+              style="color: #e9e9e9"
+              onclick="closemenu()"
+            ></i>
+            <span id="side-bar-logo">Dixheptagon.</span>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- Main Page -->
+    <div id="home" class="container col-xxl-8 px-4">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pb-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="assets/metal-slug.gif"
+            class="d-block mx-lg-auto img-fluid mario-gif"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2>Web Developer</h2>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 title-hero">
+            Hello World! <br />
+            <span>I'm Foren a programmer</span>
+            <i class="fa-solid fa-code"></i>
+          </h1>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2 shadow"
+            >
+              <a
+                id="get-intouch"
+                class="link-underline-opacity-0 link-light"
+                href="#contact-me"
+                >Get In Touch</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div id="about-me" class="bg-body-tertiary">
+      <footer class="py-3 mt-4">
+        <div class="profile">
+          <img
+            class="profile-picture"
+            src="assets/Profile Picture 3.png"
+            alt="Profile Picture"
+          />
+          <div class="profile-text">
+            <h2 cl>Let's Introduce About Me.</h2>
+            <p class="profile-description">
+              My name is Forentino Haryanto, I'm a Web Developer that specialize
+              in HTML,CSS, and JS. I ❤ watching series and movies
+            </p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2 shadow"
+            >
+              <a
+                id="download-cv"
+                href="assets/my-cv.pdf"
+                class="link-light link-underline-opacity-0"
+                target="_blank"
+                ><span>Download CV</span></a
+              >
+            </button>
+          </div>
+        </div>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+
+        <p class="text-center text-body-secondary">© 2024 Dixheptagon.</p>
+      </footer>
+    </div>
+
+    <!-- Projects -->
+
+    <div id="projects" class="album bg-body-primary">
+      <h1 class="display-5 text-body-emphasis lh-1 mb-3 title-project">
+        Projects
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img
+                src="assets/web port-00.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Personal portofolio website project.</p>
+                <a
+                  target="_blank"
+                  href="Web Personal Port-00/Port-00.html"
+                  class="btn btn-primary"
+                  >Lihat Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img
+                src="assets/tindog.png"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">
+                  Dog services website with price catalog.
+                </p>
+                <a
+                  target="_blank"
+                  href="Tindog/tindog.html"
+                  class="btn btn-primary"
+                  >Lihat Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img
+                src="assets/weather-app.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">weather-app.</p>
+                <a
+                  target="_blank"
+                  href="weather-app/weather-app.html"
+                  class="btn btn-primary"
+                  >Lihat Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-2">
+            <div class="card shadow">
+              <img
+                src="assets/businnes experience.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bussines Experience portofolio</h5>
+                <p class="card-text">Bussines Experience portofolio.</p>
+                <a
+                  target="_blank"
+                  href="Bussines Experience/bussines-experience.html"
+                  class="btn btn-primary"
+                  >Lihat Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-2">
+            <div class="card shadow">
+              <img
+                src="assets/quiz-app.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 4</h5>
+                <p class="card-text">Simple quiz app.</p>
+                <a
+                  target="_blank"
+                  href="Simple Quiz App/simple-quiz-app.html"
+                  class="btn btn-primary"
+                  >Lihat Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-2">
+            <div class="card shadow">
+              <img
+                src="assets/todo-list-app.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 5</h5>
+                <p class="card-text">To-do list app.</p>
+                <a
+                  target="_blank"
+                  href="ToDoList/todolist.html"
+                  class="btn btn-primary"
+                  >Lihat Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tambahkan lebih banyak kolom untuk setiap project -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div id="contact-me" class="container mb-5">
+      <h1 class="display-5 text-body-emphasis lh-1 mb-3 title-project">
+        Contact Me
+      </h1>
+
+      <div class="row d-flex justify-content-center contact-me-box">
+        <div class="col-md-8">
+          <div class="card shadow-lg">
+            <div class="container my-3">
+              <form name="submit-to-google-sheet">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    name="Name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="Message"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+              <span id="message"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+        <ul class="nav justify-content-center">
+          <li class="social-icons">
+            <a target="_blank" href="https://www.instagram.com/forentino6/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a target="_blank" href="https://github.com/dixheptagon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              target="_blank"
+              href="mailto:your-email@gmail.com?subject=Hello&body=I%20would%20like%20to%20contact%20you"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">
+          © 2024 Copyright, made by Forentino Haryanto
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      function setActive(element) {
+        const links = document.querySelectorAll(".nav-pills .nav-link");
+        links.forEach((link) => link.classList.remove("active")); // Hapus kelas aktif dari semua link
+        element.classList.add("active"); // Tambahkan kelas aktif pada link yang diklik
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx5bGqntEl_mJg9xsCOmMZAniQjdGbZIJh5CpS-D4eT9Wnj_7biO1jt3_1utFRYF1y1jg/exec"; // Ganti dengan URL Web App dari langkah sebelumnya
+      const form = document.forms["submit-to-google-sheet"];
+      const message = document.getElementById("message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            message.innerHTML = "Message sent successfully!";
+            setTimeout(() => {
+              message.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      let sidemenu = document.getElementById("side-menu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
